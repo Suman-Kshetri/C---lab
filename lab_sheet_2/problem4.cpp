@@ -10,7 +10,7 @@
 using namespace std;
 
 class TIME {
-    int hours, minutes, seconds; // Correct variable name 'minutes'
+    int hours, minutes, seconds;
 
 public:
     // Default constructor
@@ -60,8 +60,7 @@ public:
         int totalSeconds2 = time2.hours * 3600 + time2.minutes * 60 + time2.seconds;
         int diff = totalSeconds1 - totalSeconds2;
 
-        if (diff < 0) diff = -diff; // Make sure diff is positive
-
+        if (diff < 0) diff = -diff;
         time.hours = diff / 3600;
         time.minutes = (diff % 3600) / 60;
         time.seconds = diff % 60;
