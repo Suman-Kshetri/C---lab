@@ -52,7 +52,9 @@ MATRIX operator + (MATRIX & mat1, MATRIX & mat2)
 {
     if (mat1.row != mat2.row || mat1.cols != mat2.cols) {
             cout<<"Matrices must have the same dimensions for addition.";
+            exit('0');
         }
+        else{
         MATRIX sum_matrix(mat1.row,mat1.cols);
         for(int i=0;i<mat1.row;i++)
         {
@@ -61,9 +63,9 @@ MATRIX operator + (MATRIX & mat1, MATRIX & mat2)
                 sum_matrix.matrix[i][j]=mat1.matrix[i][j]+mat2.matrix[i][j];
             }
         }
-        return sum_matrix;     
+        return sum_matrix;
+        }
 } 
-
 int main(){
 
     int x=0,y=0,a=0,b=0;
