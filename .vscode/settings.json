@@ -98,7 +98,9 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "typeinfo": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "cstring": "cpp",
+    "ctime": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }
